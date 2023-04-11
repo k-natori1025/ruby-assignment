@@ -14,4 +14,6 @@ class User < ApplicationRecord
   validates :password_confirmation, confirmation: true                     
   
   has_secure_password
+  
+  has_many :topics
 end
