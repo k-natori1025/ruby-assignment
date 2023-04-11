@@ -12,5 +12,6 @@ class User < ApplicationRecord
                        format: {with: VALID_PASSWORD_REGEX  ,message: '半角英数を両方含む必要があります'}
                        
   validates :password_confirmation, confirmation: true                     
+  
   has_secure_password
 end
